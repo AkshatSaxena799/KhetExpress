@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Register/Login</title>
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
+</head>
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk">
+
+			<div class="signup">
+				<form action="signup.php" method="post">
+					<label for="chk">Sign up</label>
+					<input type="text" name="name" placeholder="Name" required="">
+					<input type="text" name="username" placeholder="Username" required="">
+					<input type="text" name="mobile" placeholder="Mobile" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<input type="password" name="rpswd" placeholder="Retype Password" required="">
+					<input type="text" name="address" placeholder="Address" required="">
+                    <select name="category"> 
+						<option value="Farmer" selected>Farmer</option> 
+						<option value="Buyer">Buyer</option>  
+					</select> 
+					<button>Sign up</button>
+
+
+				</form>
+			</div>
+
+			<div class="login">
+				<form action="signin.php" method="post">
+					<label for="chk">Login</label>
+					<input type="text" name="uname" placeholder="Username" required="">
+					<input type="password" name="pass" placeholder="Password" required="">
+					<select name="category"> 
+						<option value="Farmer" selected>Farmer</option> 
+						<option value="Buyer">Buyer</option>  
+					</select>
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
